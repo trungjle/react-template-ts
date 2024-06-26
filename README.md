@@ -1,6 +1,6 @@
 ## Tipalti React Starter Template
 
-This is a simplified React starter templateconfigured using [Vite](https://vitejs.dev/guide/), a build tool that aims to provide a faster and leaner development experience.
+This is a simplified React starter template configured using [Vite](https://vitejs.dev/guide/), a build tool that aims to provide a faster and leaner development experience.
 
 It has minimal dependencies and configuration to allow for easy installation and to allow the candidate to make their own decisions about styling, external libraries and other tooling.
 
