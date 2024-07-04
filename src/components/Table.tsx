@@ -14,7 +14,6 @@ interface TableRowProps extends HTMLAttributes<HTMLTableRowElement> {
 
 interface TableCellProps extends HTMLAttributes<HTMLTableCellElement> {
     children: ReactNode;
-    header?: boolean;
 }
 
 const Table = ({ children, ...htmlAttributes }: TableProps) => {
@@ -25,6 +24,10 @@ const TableHeader = ({ children, ...htmlAttributes }: TableSectionProps) => {
     return <thead {...htmlAttributes}>{children}</thead>;
 };
 
+const TableHeaderCell = ({ children, ...htmlAttributes }: TableCellProps) => {
+    return <th {...htmlAttributes}>{children}</th>;
+};
+
 const TableBody = ({ children, ...htmlAttributes }: TableSectionProps) => {
     return <tbody {...htmlAttributes}>{children}</tbody>;
 };
@@ -33,16 +36,12 @@ const TableRow = ({ children, ...htmlAttributes }: TableRowProps) => {
     return <tr {...htmlAttributes}>{children}</tr>;
 };
 
-const TableCell = ({
-    header,
-    children,
-    ...htmlAttributes
-}: TableCellProps & { header?: boolean }) => {
-    const CellComponent = header ? "th" : "td";
-    return <CellComponent {...htmlAttributes}>{children}</CellComponent>;
+const TableCell = ({ children, ...htmlAttributes }: TableCellProps) => {
+    return <td {...htmlAttributes}>{children}</td>;
 };
 
 Table.Header = TableHeader;
+Table.HeaderCell = TableHeaderCell;
 Table.Body = TableBody;
 Table.Row = TableRow;
 Table.Cell = TableCell;

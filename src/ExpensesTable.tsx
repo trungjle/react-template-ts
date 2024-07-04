@@ -18,22 +18,24 @@ const ExpensesTable = () => {
         <Table className="expenses-table">
             <Table.Header>
                 <Table.Row className="table-header">
-                    <Table.Cell className="table-header-cell">Date</Table.Cell>
-                    <Table.Cell className="table-header-cell">
+                    <Table.HeaderCell className="table-header-cell">
+                        Date
+                    </Table.HeaderCell>
+                    <Table.HeaderCell className="table-header-cell">
                         Merchant
-                    </Table.Cell>
-                    <Table.Cell className="table-header-cell">
+                    </Table.HeaderCell>
+                    <Table.HeaderCell className="table-header-cell">
                         Amount
-                    </Table.Cell>
-                    <Table.Cell className="table-header-cell">
+                    </Table.HeaderCell>
+                    <Table.HeaderCell className="table-header-cell">
                         Category
-                    </Table.Cell>
-                    <Table.Cell className="table-header-cell">
+                    </Table.HeaderCell>
+                    <Table.HeaderCell className="table-header-cell">
                         Description
-                    </Table.Cell>
-                    <Table.Cell className="table-header-cell">
+                    </Table.HeaderCell>
+                    <Table.HeaderCell className="table-header-cell">
                         Status
-                    </Table.Cell>
+                    </Table.HeaderCell>
                 </Table.Row>
             </Table.Header>
             <Table.Body>
