@@ -1,0 +1,25 @@
+.expenses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.table-header-cell {
+    padding: 10px;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-row:hover {
+    background-color: #e0e0e0;
+}
+
+.table-cell {
+    padding: 10px;
+}
