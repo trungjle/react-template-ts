@@ -21,10 +21,6 @@ const Table = ({ children, ...htmlAttributes }: TableProps) => {
     return <table {...htmlAttributes}>{children}</table>;
 };
 
-const TableSection = ({ children, ...htmlAttributes }: TableSectionProps) => {
-    return <section {...htmlAttributes}>{children}</section>;
-};
-
 const TableHeader = ({ children, ...htmlAttributes }: TableSectionProps) => {
     return <thead {...htmlAttributes}>{children}</thead>;
 };
@@ -46,7 +42,6 @@ const TableCell = ({
     return <CellComponent {...htmlAttributes}>{children}</CellComponent>;
 };
 
-Table.Section = TableSection;
 Table.Header = TableHeader;
 Table.Body = TableBody;
 Table.Row = TableRow;
